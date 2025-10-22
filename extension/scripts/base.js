@@ -88,77 +88,15 @@ function initializeConf() {
 
     // define default settings  
     var defaultSettings = {
-        search_engine_list: [
-            {
-                name: "Google", 
-                icon: "icons/google.png",
-                action: "https://google.com/search",
-                param_name: "q",
-                css_style: "height: 40px; margin: 15px 10px;"
-            },
-            {
-                name: "Bing", 
-                icon: "icons/bing.png",
-                action: "https://bing.com/search",
-                param_name: "q",
-                css_style: "height: 50px;  margin: 10px;"
-            },
-            {
-                name: "Baidu", 
-                icon: "icons/baidu.png",
-                action: "https://www.baidu.com/s",
-                param_name: "wd",
-                css_style: "height: 70px; margin-top: -10px;"
-            },
-            {
-                name: "Sogou", 
-                icon: "icons/sogou.png",
-                action: "https://www.sogou.com/web",
-                param_name: "query",
-                css_style: "height: 50px; margin: 10px;"
-            },
-            {
-                name: "Yahoo", 
-                icon: "icons/yahoo.png",
-                action: "https://search.yahoo.com/search",
-                param_name: "p",
-                css_style: "height: 35px; padding: 18px 10px;"
-            },
-            {
-                name: "Yandex", 
-                icon: "icons/yandex.png",
-                action: "https://yandex.com/search",
-                param_name: "text",
-                css_style: "height: 40px; padding: 15px 10px;"
-            },
-            {
-                name: "DuckDuckGo", 
-                icon: "icons/duckduckgo.png",
-                action: "https://duckduckgo.com/",
-                param_name: "q",
-                css_style: "height: 45px; padding: 10px;"
-            },
-            {
-                name: "360", 
-                icon: "icons/360.png",
-                action: "https://www.so.com/s",
-                param_name: "q",
-                css_style: "height: 40px; padding: 15px 10px;"
-            }
-        ],
+        search_engine_list: [],
         current_search_engine: "Google",
-        display_search_box: "yes",
+        display_search_box: "no",
         show_top_sites: "no",
-        custom_bkmk_list: [
-            {
-                name: "Ataraxia User Guide",
-                url: "https://idealland.app/ataraxia/install.html"
-            }
-        ],
-        enable_uhd_wallpaper: "no",
+        custom_bkmk_list: [],
+        enable_uhd_wallpaper: "yes",
         wallpaper_date: "2000-01-01",
         wallpaper_url: "./images/john-reign-abarintos-369080-unsplash.jpg",
-        wallpaper_text: "Welcome to Ataraxia.",
+        wallpaper_text: "",
         offset_idx: "0",
         last_open_version: "0"
     }
