@@ -3,7 +3,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <!-- NOTE: external links are for testing only -->
     <link href="./vendor/mui/mui.min.css" rel="stylesheet"/>
     <title>Ataraxia Settings</title>
     <style>
@@ -22,6 +21,7 @@
         font-size: 12px;
         border-radius: 5px;
         padding: 10px;
+        margin-bottom: 10px;
         min-width: 300px;
       }
     </style>
@@ -32,8 +32,12 @@
       <span id="display-title">Ataraxia Settings</span>
     </h2>
     <ul class="mui-tabs__bar">
-      <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="pane-default-1" id="nav-wallpaper">Wallpaper</a></li>
-      <li><a data-mui-toggle="tab" data-mui-controls="pane-default-2" id="nav-api">Api</a></li>
+      <li class="mui--is-active">
+        <a data-mui-toggle="tab" data-mui-controls="pane-default-1" style="cursor: pointer;" id="nav-wallpaper">Wallpaper</a>
+      </li>
+      <li>
+        <a data-mui-toggle="tab" data-mui-controls="pane-default-2" style="cursor: pointer;" id="nav-api">Api</a>
+      </li>
     </ul>
 
     <!-- TAB wallpapers -->
@@ -43,7 +47,7 @@
       <hr/>
       <div class="mui-checkbox">
         <label >
-          <input id="use-uhd-wallpaper-checkbox" type="checkbox" value="">
+          <input id="use-uhd-wallpaper-checkbox" type="checkbox" style="cursor: pointer;" value="">
           <span id="use-uhd-wallpaper-checkbox-text">Load UHD wallpapers</span>
         </label>
       </div>
@@ -56,6 +60,7 @@
     <div class="mui-tabs__pane" id="pane-default-2">
       <p id="api-prompt1">Set up Bing URLs for different regions.</p>
       <p id="api-prompt2">Mainly aimed at Chinese users who have traffic routing for www.bing.com and can access the international version of Bing, to set the wallpaper API to the domestic version of Bing.</p>
+      <hr/>
       <input id="api-textarea"></input>
       <br/>
       <button id="save-api-conf" class="mui-btn mui-btn--primary op-btn-save-this">Save and apply</button>

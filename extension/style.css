@@ -1,8 +1,8 @@
 /* main */
 body {
 	background-repeat: no-repeat;
-	background-size:cover;
-	background-position:center center;
+	background-size: cover;
+	background-position: center center;
 }
 
 .block {
@@ -79,18 +79,18 @@ body {
 	background: rgba(0, 0, 0, 0.5);
 }
 
-#footer-op:hover #prev-wallpaper{
+#footer-op:hover #prev-wallpaper {
 	display: inline-block;
 }
 
-#footer-op:hover #next-wallpaper{
+#footer-op:hover #next-wallpaper {
 	display: inline-block;
 }
 
-#footer-op:hover #wallpaper-download-link{
+#footer-op:hover #wallpaper-download-link {
 	display: inline-block;
 }
 
-#footer-op:hover #uhd-badge{
+#footer-op:hover #uhd-badge {
 	display: inline-block;
 }

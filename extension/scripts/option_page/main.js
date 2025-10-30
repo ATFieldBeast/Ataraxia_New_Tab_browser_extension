@@ -5,7 +5,7 @@ var defaultApiUrl = "https://cn.bing.com";
 // wallpaper settings
 function initWallpaperConf() {
 	// show uhd wallpaper
-	if(readConf('enable_uhd_wallpaper') == 'no') {
+	if (readConf('enable_uhd_wallpaper') == 'no') {
 		document.getElementById('use-uhd-wallpaper-checkbox').checked = false;
 	}
 	else {
@@ -35,14 +35,9 @@ function initApiConf() {
 function changeApiConf() {
 	// update api url conf
 	var newConf = document.getElementById('api-textarea').value;
-	// check validaty 
-	try {
-		writeConf('api_url', newConf);
-		alert(i18n('op_saved_alert'));
-	} 
-	catch (e) {
-		alert(i18n('op_bad_json_alert') +'\n' + e);
-	}
+	// change api_url conf to trigger api reload when open a new tab
+	writeConf('api_url', newConf);
+	alert(i18n('op_saved_alert'));
 }
 
 function recoverDefaultApiConf() {

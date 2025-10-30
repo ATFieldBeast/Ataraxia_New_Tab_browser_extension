@@ -1,10 +1,10 @@
 // page title
-function i18n_page_title(){
+function i18n_page_title() {
 	document.title = i18n('op_title');
 }
 
 // display title
-function i18n_display_title(){
+function i18n_display_title() {
 	document.getElementById("display-title").innerHTML = i18n('op_title');
 }
 
@@ -18,12 +18,12 @@ function i18n_nav() {
 function i18n_op_common_btns() {
 	// save
 	var save_btns = document.getElementsByClassName('op-btn-save-this');
-	for (var i=0; i<save_btns.length; i++) {
+	for (var i = 0; i < save_btns.length; i++) {
 		save_btns[i].innerHTML = i18n('op_btn_save_this');
 	}
 	// reset default
 	var reset_btns = document.getElementsByClassName('op-btn-reset-default');
-	for (var i=0; i<reset_btns.length; i++) {
+	for (var i = 0; i < reset_btns.length; i++) {
 		reset_btns[i].innerHTML = i18n('op_btn_reset_default');
 	}
 }

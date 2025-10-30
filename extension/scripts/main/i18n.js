@@ -1,5 +1,5 @@
 // page title
-function i18n_page_title(){
+function i18n_page_title() {
 	document.title = i18n('new_tab_title');
 }
 
