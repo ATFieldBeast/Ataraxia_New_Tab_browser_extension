@@ -8,7 +8,6 @@
     <title>Ataraxia Settings</title>
     <style>
       body {
-        width: 100%;
         padding: 20px 40px;
       }
       .mui-tabs__pane {
@@ -18,16 +17,12 @@
         color: gray;
         padding: 5px;
       }
-      textarea {
+      input {
         font-family: Consolas, Monaco, Menlo;
         font-size: 12px;
         border-radius: 5px;
         padding: 10px;
-        min-width: 600px;
-        min-height: 300px;
-      }
-      #version-code-span {
-        color: #009eee;
+        min-width: 300px;
       }
     </style>
   </head>
@@ -57,6 +52,17 @@
       <button id="save-wallpaper-conf-btn" class="mui-btn mui-btn--primary op-btn-save-this">Save and apply</button>
     </div>
     <!-- END TAB wallpapers -->
+
+    <!-- TAB api -->
+    <div class="mui-tabs__pane" id="pane-default-2">
+      <p id="api-prompt1">Set up Bing URLs for different regions.</p>
+      <p id="api-prompt2">Mainly aimed at Chinese users who have traffic routing for www.bing.com and can access the international version of Bing, to set the wallpaper API to the domestic version of Bing.</p>
+      <input id="api-textarea"></input>
+      <br/>
+      <button id="save-api-conf" class="mui-btn mui-btn--primary op-btn-save-this">Save and apply</button>
+      <button id="recover-api-conf" class="mui-btn mui-btn--flat mui-btn--primary op-btn-reset-default">Reset to default</button>
+    </div>
+    <!-- END TAB api -->
 
     <script src="./vendor/mui/mui.min.js"></script>
     <script src="./scripts/base.js"></script>

@@ -93,6 +93,7 @@ function initializeConf() {
         wallpaper_url: "./images/john-reign-abarintos-369080-unsplash.jpg",
         wallpaper_text: "",
         offset_idx: "0",
+        api_url: "https://cn.bing.com",
         last_open_version: "0"
     }
 

@@ -73,6 +73,10 @@
         "message": "Wallpaper"
     },
 
+    "op_nav_api": {
+        "message": "Api"
+    },
+
     "op_btn_save_this": {
         "message": "Save and apply"
     },
@@ -119,6 +123,14 @@
 
     "op_wallpaper_uhd_checkbox": {
         "message": "Load UHD wallpapers"
+    },
+
+    "op_api_prompt1": {
+        "message": "Set up Bing URLs for different regions."
+    },
+
+    "op_api_prompt2": {
+        "message": "Mainly aimed at Chinese users who have traffic routing for www.bing.com and can access the international version of Bing, to set the wallpaper API to the domestic version of Bing."
     },
 
     "op_about_prompt": {

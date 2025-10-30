@@ -73,6 +73,10 @@
         "message": "壁纸设置"
     },
 
+    "op_nav_api": {
+        "message": "API设置"
+    },
+
     "op_btn_save_this": {
         "message": "保存并应用"
     },
@@ -119,6 +123,14 @@
 
     "op_wallpaper_uhd_checkbox": {
         "message": "加载超清壁纸图片"
+    },
+
+    "op_api_prompt1": {
+        "message": "设定不同地区的Bing网址。"
+    },
+
+    "op_api_prompt2": {
+        "message": "主要针对有对www.bing.com做好分流，可以访问国际版Bing的中国用户，来指定壁纸API为国内版Bing。"
     },
 
     "op_about_prompt": {

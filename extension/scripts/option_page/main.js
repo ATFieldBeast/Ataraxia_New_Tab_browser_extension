@@ -1,6 +1,8 @@
 
 // javascript code for option operations in OPTIONS page
 
+var defaultApiUrl = "https://cn.bing.com";
+
 // wallpaper settings
 
 function initWallpaperConf() {
@@ -26,6 +28,36 @@ function changeWallpaperConf() {
 	alert(i18n('op_saved_alert'));
 }
 
+// api settings
+
+function initApiConf() {
+	// api url
+	document.getElementById('api-textarea').value = readConf('api_url');
+}
+
+function changeApiConf() {
+	// update api url conf
+	var newConf = document.getElementById('api-textarea').value;
+	// check validaty 
+	try {
+		writeConf('api_url', newConf);
+		alert(i18n('op_saved_alert'));
+	} 
+	catch (e) {
+		alert(i18n('op_bad_json_alert') +'\n' + e);
+	}
+}
+
+function recoverDefaultApiConf() {
+	var cfm = confirm(i18n('op_reset_default_confirm_alert'));
+	if (cfm == true) {
+		// default api url conf
+		writeConf('api_url', defaultApiUrl);
+		document.getElementById('api-textarea').value = defaultApiUrl;
+		alert(i18n('op_reset_default_done_alert'));
+	}
+}
+
 
 // ------------- exec --------------
 
@@ -35,5 +67,12 @@ initWallpaperConf();
 
 // bind save wallpaper conf btn
 document.getElementById('save-wallpaper-conf-btn').onclick = changeWallpaperConf;
+
+// read api conf
+initApiConf();
+
+// bind save api conf
+document.getElementById('save-api-conf').onclick = changeApiConf;
+document.getElementById('recover-api-conf').onclick = recoverDefaultApiConf;
 
 

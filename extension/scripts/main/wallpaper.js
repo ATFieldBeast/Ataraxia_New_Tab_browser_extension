@@ -65,7 +65,7 @@ function updateWallpaper(idx){
 	xhr.onreadystatechange = function(){
 		if(xhr.readyState==4){
 			var obj = JSON.parse(xhr.responseText);
-			var url = 'https://cn.bing.com' + obj.images[0].url;
+			var url = readConf('api_url') + obj.images[0].url;
 			// if UHD enabled
 			if (readConf('enable_uhd_wallpaper') == 'yes') {
 				url = url.replaceAll('1920x1080', 'UHD');
@@ -77,7 +77,7 @@ function updateWallpaper(idx){
 		}
 	}
 	var current_lang = window.navigator.language;
-	xhr.open('get','https://cn.bing.com/HPImageArchive.aspx?format=js&n=1&mkt=' + current_lang + '&idx=' + idx);
+	xhr.open('get',readConf('api_url') + '/HPImageArchive.aspx?format=js&n=1&mkt=' + current_lang + '&idx=' + idx);
 	xhr.send(null);
 }
 
