@@ -110,7 +110,7 @@
     },
 
     "op_wallpaper_uhd_hint1": {
-        "message": "By default Ataraxia load wallpapers with 3840¡Á2160 resolution. UHD wallpapers are much clearer, but also take longer time to be loaded for the first time."
+        "message": "By default Ataraxia load wallpapers with 3840Ã—2160 resolution. UHD wallpapers are much clearer, but also take longer time to be loaded for the first time."
     },
 
     "op_wallpaper_uhd_hint2": {
