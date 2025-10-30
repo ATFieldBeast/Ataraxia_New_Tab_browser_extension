@@ -37,8 +37,12 @@
         "message": "设置"
     },
 
-    "btr_change_wallpaper_btn": {
-        "message": "换一张背景图"
+    "btr_prev_wallpaper_btn": {
+        "message": "前一天的壁纸"
+    },
+
+    "btr_next_wallpaper_btn": {
+        "message": "后一天的壁纸"
     },
 
     "btr_download_wallpaper_btn": {

@@ -26,8 +26,6 @@ function setFooterText(text) {
 function showLoadingAnim() {
 	var circle = document.getElementById('loading-circle');
 	circle.style.display = 'inline-block';
-	// set footer text
-	setFooterText('Updating wallpaper ...');
 }
 
 // hide loading animation
@@ -41,7 +39,6 @@ function hideLoadingAnim() {
 function loadAndChangeOnlineWallpaper(url, text) {
 	showDefaultWallpaper();
 	showLoadingAnim();
-	setFooterText('Updating wallpaper ...');
 	// preload wallpaper
 	var tmp_img = new Image();
 	tmp_img.src = url;
@@ -108,8 +105,8 @@ function initWallpaper(){
 	}
 }
 
-// if user want to show old wallpapers.
-function switchOldWallpaper(){
+// if user want to show prev wallpapers.
+function switchPrevWallpaper(){
 	var MAX_OLD_DAYS = 7;
 	// calculate idx
 	var cache_idx = readConf("offset_idx");
@@ -118,6 +115,21 @@ function switchOldWallpaper(){
 	}
 	cache_idx = parseInt(cache_idx);
 	cache_idx = (cache_idx + 1) % MAX_OLD_DAYS;
+	writeConf("offset_idx", cache_idx.toString());
+	// reload wallpaper
+	updateWallpaper(cache_idx);
+}
+
+// if user want to show next wallpapers.
+function switchNextWallpaper(){
+	var MAX_OLD_DAYS = 7;
+	// calculate idx
+	var cache_idx = readConf("offset_idx");
+	if (cache_idx === "") {
+		cache_idx = 0;
+	}
+	cache_idx = parseInt(cache_idx);
+	cache_idx = (cache_idx - 1 + MAX_OLD_DAYS) % MAX_OLD_DAYS;
 	writeConf("offset_idx", cache_idx.toString());
 	// reload wallpaper
 	updateWallpaper(cache_idx);
@@ -136,7 +148,11 @@ function setDownloadLink() {
 // init wallpaper
 initWallpaper();
 
-// bind switch old wallpaper click event
-var change_wp_btn = document.getElementById('change-wallpaper');
-change_wp_btn.onclick = switchOldWallpaper;
+// bind switch prev wallpaper click event
+var prev_wp_btn = document.getElementById('prev-wallpaper');
+prev_wp_btn.onclick = switchPrevWallpaper;
+
+// bind switch next wallpaper click event
+var next_wp_btn = document.getElementById('next-wallpaper');
+next_wp_btn.onclick = switchNextWallpaper;
 

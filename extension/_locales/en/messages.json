@@ -37,8 +37,12 @@
         "message": "Settings"
     },
 
-    "btr_change_wallpaper_btn": {
-        "message": "change another wallpaper"
+    "btr_prev_wallpaper_btn": {
+        "message": "prev day's wallpaper"
+    },
+
+    "btr_next_wallpaper_btn": {
+        "message": "next day's wallpaper"
     },
 
     "btr_download_wallpaper_btn": {

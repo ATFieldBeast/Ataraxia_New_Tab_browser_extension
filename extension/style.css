@@ -102,6 +102,9 @@ body {
 	animation: spin 2s linear infinite;
 	display: none;
 	float: right;
+	position: absolute;
+	bottom: 50px;
+	right: 30px;
 }   
 @-webkit-keyframes spin {
 	0% { -webkit-transform: rotate(0deg); }
@@ -118,8 +121,15 @@ body {
 	border-radius: 5px;
 }
 
-#change-wallpaper {
-	padding-right: 5px;
+#prev-wallpaper {
+	padding-left: 5px;
+	cursor: pointer;
+	display: none;
+}
+
+#next-wallpaper {
+	padding-left: 5px;
+	cursor: pointer;
 	display: none;
 }
 
@@ -143,7 +153,11 @@ body {
 	background: rgba(0, 0, 0, 0.5);
 }
 
-#footer-op:hover #change-wallpaper{
+#footer-op:hover #prev-wallpaper{
+	display: inline-block;
+}
+
+#footer-op:hover #next-wallpaper{
 	display: inline-block;
 }
 
