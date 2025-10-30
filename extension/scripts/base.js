@@ -1,4 +1,3 @@
-
 var manifestData = chrome.runtime.getManifest();
 let CURRENT_VERSION = manifestData.version;
 let CURRENT_LOCALE = chrome.i18n.getMessage('@@ui_locale');
@@ -21,9 +20,9 @@ function appendOnLoadEvent(func) {
 
 // get current date string 
 function getDateString() {
-	var date = new Date();
-	var result = "" + date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate();
-	return result;
+	  var date = new Date();
+	  var result = "" + date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate();
+	  return result;
 }
 
 // i18n
@@ -31,15 +30,9 @@ function i18n(key) {
     return chrome.i18n.getMessage(key);
 }
 
-
 // write chrome storage
 function writeConf(key, value) {
     localStorage[key] = JSON.stringify(value);
-    /*
-    chrome.storage.sync.set({key: value}, function() {
-        console.log('Save value of ' + key);
-    });
-    */
 }
 
 // read chrome storage
@@ -51,37 +44,10 @@ function readConf(key) {
     else {
         return JSON.parse(val);
     }
-    
-    /*
-    chrome.storage.sync.get([key], function(result) {
-        console.log('Read value of ' + key);
-        func(result.key);
-    });
-    */
 }
 
 // ---- conf initializer ---- 
 
-/* 
-    Conf items: 
-        // search
-            - search_engine_list: Json list, available search engines
-            - current_search_engine: String, name of current search engine
-            - display_search_box: String(yes no), show search box or not
-        // topSites
-            - show_top_sites: String(yes no)
-        // custom bookmarks
-            - custom_bkmk_list: Json list, user defined bookmarks
-        // wallpaper
-            - enable_uhd_wallpaper: String(yes no)
-            - wallpaper_date: String
-            - wallpaper_url: String
-            - wallpaper_text: String
-            - offset_idx: String, can be parsed to int
-        // version flag
-            - last_open_version: String
-    */
-        
 // initialize conf storage
 function initializeConf() {
     console.log("initialize conf ...");
@@ -118,4 +84,3 @@ if (last_open_version == undefined || parseFloat(last_open_version) < parseFloat
 
     writeConf('last_open_version', CURRENT_VERSION);
 }
-

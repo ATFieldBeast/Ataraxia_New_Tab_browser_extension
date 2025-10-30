@@ -1,4 +1,3 @@
-
 // page title
 function i18n_page_title(){
 	document.title = i18n('op_title');
@@ -43,7 +42,6 @@ function i18n_api_tab() {
 }
 
 // exec
-
 function exec_i18n() {
 	i18n_page_title();
 	i18n_display_title();

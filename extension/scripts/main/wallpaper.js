@@ -1,4 +1,3 @@
-
 // set wallpaper to default
 function showDefaultWallpaper() {
 	// set wallpaper
@@ -43,18 +42,18 @@ function loadAndChangeOnlineWallpaper(url, text) {
 	var tmp_img = new Image();
 	tmp_img.src = url;
 	tmp_img.onload = function(){
-	  	// set wallpaper
-		var body = document.getElementById('main-body');
-		body.style.backgroundImage = "url('" + url + "')";
-		// set footer text
-		hideLoadingAnim();
-		setFooterText(text);
-		// update conf
-		writeConf("wallpaper_date", getDateString());
-		writeConf("wallpaper_url", url);
-		writeConf("wallpaper_text", text);
-		// set download link
-		setDownloadLink();
+	// set wallpaper
+	var body = document.getElementById('main-body');
+	body.style.backgroundImage = "url('" + url + "')";
+	// set footer text
+	hideLoadingAnim();
+	setFooterText(text);
+	// update conf
+	writeConf("wallpaper_date", getDateString());
+	writeConf("wallpaper_url", url);
+	writeConf("wallpaper_text", text);
+	// set download link
+	setDownloadLink();
 	};
 }
 
@@ -77,7 +76,7 @@ function updateWallpaper(idx){
 		}
 	}
 	var current_lang = window.navigator.language;
-	xhr.open('get',readConf('api_url') + '/HPImageArchive.aspx?format=js&n=1&mkt=' + current_lang + '&idx=' + idx);
+	xhr.open('get', readConf('api_url') + '/HPImageArchive.aspx?format=js&n=1&mkt=' + current_lang + '&idx=' + idx);
 	xhr.send(null);
 }
 
@@ -142,7 +141,6 @@ function setDownloadLink() {
 	downloadLink.download = 'bing-wallpaper-' + getDateString();
 }
 
-
 // --------------------------------------------------
 
 // init wallpaper
@@ -155,4 +153,3 @@ prev_wp_btn.onclick = switchPrevWallpaper;
 // bind switch next wallpaper click event
 var next_wp_btn = document.getElementById('next-wallpaper');
 next_wp_btn.onclick = switchNextWallpaper;
-

@@ -1,4 +1,3 @@
-
 // javascript code for option operations in main page
 
 function openOptions() {

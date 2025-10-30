@@ -1,4 +1,3 @@
-
 // page title
 function i18n_page_title(){
 	document.title = i18n('new_tab_title');
@@ -21,13 +20,6 @@ function i18n_btr_download_wallpaper_btn() {
 	var x = document.getElementById('wallpaper-download-link');
 	x.title = i18n('btr_download_wallpaper_btn');
 }
-
-// // bottom-right uhd wallpaper badge 
-// function i18n_btr_download_wallpaper_btn() {
-// 	var x = document.getElementById('uhd-badge');
-// 	x.innerHTML = i18n('btr_download_wallpaper_uhd_badge');
-// }
-
 
 function exec_i18n() {
 	i18n_page_title();

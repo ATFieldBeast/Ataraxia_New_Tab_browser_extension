@@ -1,10 +1,8 @@
-
 // javascript code for option operations in OPTIONS page
 
 var defaultApiUrl = "https://cn.bing.com";
 
 // wallpaper settings
-
 function initWallpaperConf() {
 	// show uhd wallpaper
 	if(readConf('enable_uhd_wallpaper') == 'no') {
@@ -29,7 +27,6 @@ function changeWallpaperConf() {
 }
 
 // api settings
-
 function initApiConf() {
 	// api url
 	document.getElementById('api-textarea').value = readConf('api_url');
@@ -58,9 +55,7 @@ function recoverDefaultApiConf() {
 	}
 }
 
-
 // ------------- exec --------------
-
 
 // init wallpaper
 initWallpaperConf();
@@ -74,5 +69,3 @@ initApiConf();
 // bind save api conf
 document.getElementById('save-api-conf').onclick = changeApiConf;
 document.getElementById('recover-api-conf').onclick = recoverDefaultApiConf;
-
-
