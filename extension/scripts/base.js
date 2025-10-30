@@ -88,13 +88,8 @@ function initializeConf() {
 
     // define default settings  
     var defaultSettings = {
-        search_engine_list: [],
-        current_search_engine: "Google",
-        display_search_box: "no",
-        show_top_sites: "no",
-        custom_bkmk_list: [],
         enable_uhd_wallpaper: "yes",
-        wallpaper_date: "2000-01-01",
+        wallpaper_date: "1970-01-01",
         wallpaper_url: "./images/john-reign-abarintos-369080-unsplash.jpg",
         wallpaper_text: "",
         offset_idx: "0",
