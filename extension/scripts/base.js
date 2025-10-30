@@ -56,7 +56,7 @@ function initializeConf() {
     var defaultSettings = {
         enable_uhd_wallpaper: "yes",
         wallpaper_date: "1970-01-01",
-        wallpaper_url: "./images/john-reign-abarintos-369080-unsplash.jpg",
+        wallpaper_url: "./images/default.png",
         wallpaper_text: "",
         offset_idx: "0",
         api_url: "https://cn.bing.com",
