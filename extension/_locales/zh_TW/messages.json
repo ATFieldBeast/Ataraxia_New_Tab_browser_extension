@@ -4,11 +4,11 @@
     },
 
     "extension_name": {
-        "message": "Ataraxia 新標籤頁"
+        "message": "bWallpaper 新標籤頁"
     },
 
     "extension_desc": {
-        "message": "極簡新標籤頁。每日美圖壁紙自動更新。支持多個搜索引擎。"
+        "message": "極簡新標籤頁，自動更新每日一圖壁紙。"
     }, 
 
     "btr_prev_wallpaper_btn": {
@@ -28,7 +28,7 @@
     },
 
     "op_title": {
-        "message": "Ataraxia 設置項"
+        "message": "bWallpaper 設置項"
     },
 
     "op_nav_wallpaper": {

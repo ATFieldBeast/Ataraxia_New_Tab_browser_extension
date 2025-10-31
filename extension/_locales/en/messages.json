@@ -4,11 +4,11 @@
     },
 
     "extension_name": {
-        "message": "Ataraxia New Tab"
+        "message": "bWallpaper New Tab"
     },
 
     "extension_desc": {
-        "message": "Simple new tab with beautiful daily wallpaper. Start search with your favorite search engine."
+        "message": "Simple new tab with daily wallpaper."
     },
 
     "btr_prev_wallpaper_btn": {
@@ -28,7 +28,7 @@
     },
 
     "op_title": {
-        "message": "Ataraxia Settings"
+        "message": "bWallpaper Settings"
     },
 
     "op_nav_wallpaper": {
@@ -48,7 +48,7 @@
     },
 
     "op_wallpaper_uhd_hint1": {
-        "message": "By default Ataraxia load wallpapers with 3840×2160 resolution. UHD wallpapers are much clearer, but also take longer time to be loaded for the first time."
+        "message": "By default bWallpaper load wallpapers with 3840×2160 resolution. UHD wallpapers are much clearer, but also take longer time to be loaded for the first time."
     },
 
     "op_wallpaper_uhd_hint2": {
