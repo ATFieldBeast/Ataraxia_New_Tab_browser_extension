@@ -1,47 +1,37 @@
-```
-🚧 正在使用 React 重构本插件，工作进行中，敬请期待。
-```
+### 基于Ataraxia 新标签页修改，只保留壁纸功能
 
+# bWallpaper - 必应壁纸新标签页
 
-# Ataraxia - 新标签页插件 - 必应每日壁纸
-
----
-
-Ataraxia 是一个极致简洁的浏览器新标签页插件，适用于 Google Chrome 和 Microsoft Edge 等 Chromium 内核浏览器。
-
-- 网站： [https://idealland.app/ataraxia/](https://idealland.app/ataraxia/)
-- 获取适用于 Chrome 的最新版本：[https://aka.ci/atxcr](https://aka.ci/atxcr)
-- 获取适用于 Edge 的最新版本：[https://aka.ci/atxedge](https://aka.ci/atxedge)
+bWallpaper 是一个极致简洁的浏览器新标签页插件，适用于 Google Chrome 和 Microsoft Edge 等 Chromium 内核浏览器。
 
 ---
 
 功能特性：
 
-- 自动同步必应每日壁纸，支持超清大图
-- 支持多个搜索引擎切换，支持自定义
-- 极简
+- 自动同步必应每日壁纸
+- 显示下载超清壁纸
+- 向前向后切换
 
 ![sample](images/sample.png)
 
+![sample_hover](images/sample_hover.png)
 
 ---
 
+### Based on Ataraxia New Tab, retaining the wallpaper functionality only
 
-# Ataraxia - New Tab Extension with Bing Wallpaper
+# bWallpaper - New Tab Extension with Bing Wallpaper
 
-Ataraxia is a super simple browser new tab extension, designed for Google Chrome, Microsoft Edge and other Chromium based browsers.
-
-- Offcial site: [https://idealland.app/ataraxia/](https://idealland.app/ataraxia/)
-- Get for Chrome: [https://aka.ci/atxcr](https://aka.ci/atxcr)
-- Get for Edge: [https://aka.ci/atxedge](https://aka.ci/atxedge)
+bWallpaper is a super simple browser new tab extension, designed for Google Chrome, Microsoft Edge and other Chromium based browsers.
 
 ---
 
 Features:
 
-- Sync with Bing wallpapers every day (with support of UHD resolution photos)
-- Support multiple search engines
-- Simple and fast.
+- Automatically sync Bing daily wallpapers
+- Display and download UHD resolution wallpapers
+- Switch forward and backward
 
 ![sample](images/sample.png)
 
+![sample_hover](images/sample_hover.png)
